@@ -58,6 +58,8 @@ let swiper = new Swiper(".discover__container", {
 
 /*==================== VIDEO ====================*/
 
+document.getElementById('video-loop').play();
+
 const videoFile = document.getElementById('video-file'),
       videoButton = document.getElementById('video-button'),
       videoIcon = document.getElementById('video-icon')
