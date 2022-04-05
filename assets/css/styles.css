@@ -413,12 +413,14 @@ section.video h4 {
 .about_main .about__video video {
     border-radius: 5px;
 }
-.about_main .about__container {
-    column-gap: 2.5rem;
-}
+
 .about__container {
     row-gap: 2.5rem;
     grid-template-columns: 1fr 4fr;
+}
+.about_main .about__container {
+    column-gap: 2.5rem;
+    grid-template-columns: ;
 }
 .about__description {
     margin-bottom: var(--mb-2);
@@ -1062,7 +1064,8 @@ section.video h4 {
       width: 240px;
     }
     .about_main .about__container {
-        display: flex;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
     }
     .about_main .about__data {
         align-items: center;
