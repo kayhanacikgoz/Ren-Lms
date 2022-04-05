@@ -420,7 +420,6 @@ section.video h4 {
 }
 .about_main .about__container {
     column-gap: 2.5rem;
-    grid-template-columns: ;
 }
 .about__description {
     margin-bottom: var(--mb-2);
