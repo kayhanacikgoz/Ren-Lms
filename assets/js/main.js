@@ -54,6 +54,11 @@ let swiper = new Swiper(".discover__container", {
     coverflowEffect: {
         rotate: 0,
     },
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
 })
 
 /*==================== VIDEO ====================*/

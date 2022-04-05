@@ -454,6 +454,9 @@ section.video h4 {
 section.discover {
     padding: 6.5rem 0 8.5rem 0;
 }
+section.discover h2 {
+    text-transform: none;
+}
 .discover__card {
     position: relative;
     width: 300px;
@@ -466,6 +469,9 @@ section.discover {
     background-color: rgba(0,0,0,.25);
     padding: .75rem;
     border-radius: 3px;
+}
+.discover__data h2 {
+    text-align: center;
 }
 .discover__title, 
 .discover__description {
@@ -481,6 +487,16 @@ section.discover {
 }
 .discover__img {
     transition: var(--img-transition);
+}
+.swiper-button-prev {
+    background: none;
+    color: #FFF;
+
+}
+.swiper-button-next {
+    background: none;
+    color: #FFF;
+
 }
 
 /*=============== EXPERIENCE ===============*/
@@ -773,7 +789,7 @@ section.video h4 {
 
 .footer__social {
     font-size: 1.85rem;
-    color: #292E34;
+    color: var(--text-color);
     margin-right: var(--mb-1-25);
 }
 .footer__subtitle {
