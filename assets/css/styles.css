@@ -757,6 +757,8 @@ section.video h4 {
     row-gap: 2.5rem;
     min-width: 402rem;
     animation: lefting infinite 80s linear;
+    background-color: #FFF;
+    padding: 1rem 0;
 }
 @keyframes lefting {
     0% {
@@ -769,6 +771,7 @@ section.video h4 {
 .sponsor__img {
     height: 50px;
     width: auto;
+    filter: grayscale(100%);
 }
 
 /*=============== FOOTER ===============*/
