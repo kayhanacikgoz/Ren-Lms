@@ -771,11 +771,14 @@ section.video h4 {
 .sponsor__img {
     height: 50px;
     width: auto;
-    filter: grayscale(100%);
+    /*filter: grayscale(100%);*/
 }
 
 /*=============== FOOTER ===============*/
-
+.footer {
+    padding-left: 20px;
+    padding-right: 20px;
+}
 .footer__container {
     row-gap: 5rem;
 }
@@ -986,6 +989,9 @@ section.video h4 {
     .section {
         padding: 7rem 0 2rem;
     }
+    .footer {
+        padding: 7rem 2rem 2rem 2rem;
+    }
     .home__container {
         height: 100vh;
     }
@@ -1082,51 +1088,51 @@ section.video h4 {
       /*width: 160px;*/
     }
     .about__img-two {
-      width: 290px;
+        width: 290px;
     }
     .discover__card {
-      width: 420px;
+        width: 420px;
     }
     .discover__container {
-      width: 960px;
+        
     }
     .discover__data {
-      left: 1.5rem;
-      bottom: 2rem;
+        left: 1.5rem;
+        bottom: 2rem;
     }
     .discover__title {
-      font-size: var(--h2-font-size);
+        font-size: var(--h2-font-size);
     }
     .experience__container {
         flex-direction: row;
     }
     .experience__content {
-      margin: var(--mb-1) 0;
-      column-gap: 3.5rem;
-      grid-template-columns: repeat(6, 1fr);
+        margin: var(--mb-1) 0;
+        column-gap: 3.5rem;
+        grid-template-columns: repeat(6, 1fr);
     }
     .experience__overlay:nth-child(1) {
-      width: 463px;
-      margin-right: 7rem;
+        width: 463px;
+        margin-right: 7rem;
     }
     .experience__overlay:nth-child(2) {
-      width: 220px;
-      top: 3rem;
+        width: 220px;
+        top: 3rem;
     }
     .video__container {
-      grid-template-columns: .7fr;
+        grid-template-columns: .7fr;
     }
     .video__description {
-      padding: 0 2rem;
+        padding: 0 2rem;
     }
     .place__card, .place__img {
-      height: 243px;
+        height: 243px;
     }
     .sponsor__container {
         column-gap: 7rem;
     }
     .footer__content {
-      justify-items: center;
+        justify-items: center;
     }
   }
 
@@ -1134,7 +1140,7 @@ section.video h4 {
 
 @media screen and (min-width: 1200px) {
     .container {
-      max-width: 1024px;
+        max-width: 1024px;
     }
     .experience__content {
         grid-template-columns: repeat(6, 1fr);
