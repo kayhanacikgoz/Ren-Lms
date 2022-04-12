@@ -115,6 +115,10 @@ body.dark-theme {
 html {
     scroll-behavior: smooth;
 }
+.formFooter {
+    /* visibility: hidden; */
+    display: none;
+}
 body {
     margin: var(--header-height) 0 0 0;
     font-family: var(--body-font);
@@ -748,6 +752,20 @@ section.video h4 {
 }
 .subscribe__input::placeholder {
     color: var(--text-color);
+}
+.received-message {
+    display: none;
+    /* position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9; */
+  }
+
+  .received-message p {
+    text-align: center;
+    margin-top: var(--mb-2-5);
+    color: var(--white-color);
 }
 
 /*=============== SPONSORS ===============*/

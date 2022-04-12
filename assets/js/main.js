@@ -188,3 +188,35 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+/*========================= E-posta Form =========================*/ 
+
+function send_contact(){
+	 
+    var contact_email = $('#contact_email').val();		
+    /*  var contact_name = $('#contact_name').val();		
+    var contact_msg = $('#contact_msg').val();	 */	
+    var remote_url = 'services_contact.php';	
+
+
+    $.ajax({
+    method: "POST",
+    url: remote_url,
+    data: { 
+        contact_email: contact_email,
+            /*  contact_name: contact_name, 
+            contact_msg: contact_msg  */
+            }
+    })
+   .done(function( msg ) {
+     if( msg == 'true' ){
+        document.getElementById("received-message").style.display = "block";
+        document.getElementById("contact").reset();
+         //alert( "Data Saved: " + msg );
+     }else{
+
+         alert( "Hata: " + msg );
+     }
+   });
+    return false;
+}

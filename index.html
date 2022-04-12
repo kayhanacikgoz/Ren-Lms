@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
     <!--=============== REMIXICONS ===============-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -337,21 +337,32 @@
         <!--==================== SUBSCRIBE ====================-->
 
         <section class="subscribe section">
-            <div class="subscribe__bg">
-                <!--<div class="subscribe__container container">
+            <div class="subscribe__bg">   
+                <div class="subscribe__container container">
                     <h2 class="section__title subscribe__title">Sizinle <br> İletişime geçelim</h2>
-                    <p class="subscribe__description">Email adresinizi bizimle paylaşın sizinle iletişime geçelim.
+                    <p class="subscribe__description">E-posta adresinizi bizimle paylaşın sizinle iletişime geçelim.
                     </p>
 
-                    <form action="" class="subscribe__form">
-                        <input type="text" placeholder="Email" class="subscribe__input">
+                    <form id="contact" action="" class="subscribe__form">
+                        <input type="email" name="contact_email" id="contact_email" placeholder="E-posta" class="subscribe__input" required>
+                       <!--  <input type="text" name="contact_email" id="contact_email" placeholder="Telefon" class="subscribe__input" required>
+                        <input type="text" name="contact_email" id="contact_email" placeholder="Message" class="subscribe__input" required> -->
 
-                        <button class="button">
+                        <button class="button" type="button" name="contact_submit"  onclick="return send_contact();" >
                             Gönder
                         </button>
                     </form>
-                </div>-->
-                <script type="text/javascript" src="https://form.jotform.com/jsform/220924122915955"></script>
+
+                    <div class="received-message" id="received-message">
+                        
+                        <p>Talebiniz bize ulaşmıştır!</p>
+                        <p>En kısa sürede sizinle iletişime geçeceğiz...</p>
+                      
+                          <!-- <button type="button" class="btn cancel" onclick="closeForm()">Close</button> -->
+                       
+                    </div>
+                </div>
+           
             </div>
         </section>
 
@@ -468,9 +479,9 @@
     
                     <div class="footer__data">
                         <h3 class="footer__title">İletişim</h3>
-                        <p class="footer__description"><b>Email:</b> <br> info@renlms.com
+                        <p class="footer__description"><b>E-mail:</b> <br> info@renlms.com
                         </p>
-                        <p class="footer__description"><b>Telefon:</b> <br> +90 216 518 11 44 </p>
+                        <p class="footer__description"><b>Telefon:</b> <br> +90 222 225 45 96 </p>
                     </div>
                 </div>
 
@@ -502,6 +513,7 @@
 <script src="assets/js/swiper-bundle.min.js"></script>
 
 <!--=============== MAIN JS ===============-->
-<script src="assets/js/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="./assets/js/main.js"></script>
 </body>
 </html>
